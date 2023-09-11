@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eu
+
+/usr/bin/irissession $1 <<EOFRUNDECK
+$3
+$4
+zn "$2"
+$5
+h
+EOFRUNDECK

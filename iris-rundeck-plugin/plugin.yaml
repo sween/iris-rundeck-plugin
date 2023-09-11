@@ -1,0 +1,48 @@
+name: iris-rundeck-plugin
+rundeckPluginVersion: 2.0
+author: Ron Sweeney
+description: Rundeck Workflow Actions for InterSystems IRIS Workloads
+rundeckCompatibilityVersion: 3.x
+targetHostCompatibility: unix
+license: MIT
+tags:
+    - script
+    - WorkflowNodeStep
+    - iris
+date: 2023-09-10T21:23:08.365606Z
+version: 1.0.0
+providers:
+    - name: iris-rundeck-plugin
+      service: WorkflowNodeStep
+      title: iris-rundeck-plugin
+      description: IRIS Session Command
+      plugin-type: script
+      script-interpreter: /usr/bin/bash
+      script-file: iris
+      # sudo -i -u irisdeploy /usr/bin/irissession IRIS <<EOFDB
+      script-args: ${config.irisinstance} ${config.irisnamespace} ${config.irisusr} ${config.irispass} ${config.iriscommand}
+      config:
+        - name: irisusr
+          type: String
+          title: Iris User
+          description: InterSystems IRIS User
+        - name: irisinstance
+          type: String
+          title: Iris Instance
+          description: InterSystems IRIS User
+        - name: irisnamespace
+          type: String
+          title: Iris Namespace
+          description: InterSystems IRIS User
+        - name: iriscommand
+          type: String
+          title: Iris Command
+          description: InterSystems IRIS Command to Run
+        - name: irispass
+          type: String
+          title: Iris Password
+          description: InterSystems IRIS Password
+          renderingOptions:
+            selectionAccessor: "STORAGE_PATH"
+            valueConversion: "STORAGE_PATH_AUTOMATIC_READ"
+            storage-path-root: "keys"
