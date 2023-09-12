@@ -6,9 +6,9 @@ Site Reliability Engineers familiar with Rundeck may find this plugin useful in 
 # ![A Wedge Between the Pager](assets/rundeck_iris_banner.png)
 
 ## <img src="assets/rundeck.png" width="48px" height="48px"/> Rundeck
-The way I characterize Rundeck is a "Runbook Firewall" Between the observability event and the Pager.  Situated in between the event and the notification we can do a myriad of things to enrich the validity of, remediation of, and informational gathering to remediate the event.
+The way I characterize Rundeck is a "Runbook Firewall" Between the observability event and the Pager.  Situated in between the event and the notification we can do a myriad of things to enrich the validity of, criticality of, and informational gathering to remediate the event or signal.
 
-
+Runbook types include:  
 #### Automated Diagnostics
 The ability to invoke a series of actions against IRIS to enumerate either actionable or non-actionable information.
 
