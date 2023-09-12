@@ -1,8 +1,8 @@
-# ![InterSystems IRIS Rundeck Plugin](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+# ![InterSystems IRIS Rundeck Plugin](assets/top_iris_rundeck.png)
 
 > Rundeck Plugin for Site Reliability Teams Running InterSystems IRIS Workloads
 
-[![github release version](https://img.shields.io/github/v/release/sween/tui.editor.svg?include_prereleases)](https://github.com/sween/tui.editor/releases/latest) 
+[![github release version](https://img.shields.io/github/v/release/sween/iris-rundeck-plugin.svg?include_prereleases)](https://github.com/sween/iris-rundeck-plugin/releases/latest) 
 
 <img src="https://user-images.githubusercontent.com/37766175/121809054-446bac80-cc96-11eb-9139-08c6d9ad2d88.png" />
 
@@ -18,11 +18,13 @@
 
 ## 📦 Installation
 
-allows you to run a development server without bundling.
+This will make the plugin available in the plugins panel for install.
 
 ``` sh
-$ npm run serve editor
+cp build/libs/iris-rundeck-plugin.zip /var/lib/rundeck/libext
 ```
+
+or you can upload the plugin directly using the UI
 
 
 ## 🎨 Features
