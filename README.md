@@ -1,11 +1,11 @@
-# ![InterSystems IRIS Rundeck Plugin](assets/top_iris_rundeck.png)
+# ![InterSystems IRIS Rundeck Plugin](https://github.com/sween/iris-rundeck-plugin/blob/main/assets/top_iris_rundeck.png?raw=true)
 
 > Rundeck Plugin for Site Reliability Teams Running InterSystems IRIS Workloads
 
 Site Reliability Engineers familiar with Rundeck may find this plugin useful in responding to observability events emitting from InterSystems IRIS workloads.  For those of you new to Site Reliability Engineering in the context of IRIS Workloads, the OSS Rundeck and this plugin can give you an idea on what its going to take to handle observability events before shipping them directly off to pagers for implied support.
-# ![A Wedge Between the Pager](assets/rundeck_iris_banner.png)
+# ![A Wedge Between the Pager](https://github.com/sween/iris-rundeck-plugin/blob/main/assets/rundeck_iris_banner.png?raw=true)
 
-## <img src="assets/rundeck.png" width="48px" height="48px"/> Rundeck
+## <img src="https://github.com/sween/iris-rundeck-plugin/blob/main/assets/rundeck.png?raw=true" width="48px" height="48px"/> Rundeck
 The way I characterize Rundeck is a "Runbook Firewall" Between the observability event and the Pager.  Situated in between the event and the notification we can do a myriad of things to enrich the validity of, criticality of, and informational gathering to remediate the event or signal.
 
 Runbook types include:  
@@ -46,12 +46,12 @@ cp build/libs/iris-rundeck-plugin.zip /var/lib/rundeck/libext
 
 Or you can upload the plugin directly using the UI.
 
-![InterSystems IRIS Rundeck Plugin](assets/upload_plugin.png)
+![InterSystems IRIS Rundeck Plugin](https://github.com/sween/iris-rundeck-plugin/blob/main/assets/upload_plugin.png?raw=true)
 
 
 ## 🐾 Examples
 
-![InterSystems IRIS Rundeck Plugin](assets/iris_jobs.png)
+![InterSystems IRIS Rundeck Plugin](https://github.com/sween/iris-rundeck-plugin/blob/main/assets/iris_jobs.png?raw=true)
 
 
 ### </> Develop
